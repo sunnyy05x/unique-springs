@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Springs | Premium Spring Manufacturing</title>
+    <meta name="description"
+        content="Unique Springs - Leading manufacturer of compression springs, extension springs, torsion springs, die mould springs, wire form hooks, strip springs. Wire diameter 0.2mm to 45mm.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="images/logo.png" alt="Unique Springs Logo" class="brand-logo">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#payment" class="nav-link">Payment</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge reveal">
+                    <i class="fas fa-industry"></i> Premium Spring Manufacturing
+                </div>
+                <h1 class="hero-title reveal">
+                    <span class="line">Precision</span>
+                    <span class="line gradient-text">Engineered</span>
+                    <span class="line">Springs</span>
+                </h1>
+                <p class="hero-description reveal">
+                    From 0.2mm to 45mm wire diameter — crafted for every engineering need.
+                    All Engineering Springs, Die Moulds, Wire Forms & more.
+                </p>
+                <div class="hero-cta reveal">
+                    <a href="https://wa.me/919226890226" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                    <a href="tel:+919096143811" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+                <div class="hero-stats reveal">
+                    <div class="stat">
+                        <span class="stat-number">0.2-45</span>
+                        <span class="stat-label">mm Wire Range</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">7+</span>
+                        <span class="stat-label">Product Lines</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-3d" id="hero-3d-container">
+                <canvas id="spring-canvas"></canvas>
+                <div class="glow-ring"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">About <span class="gradient-text">Unique Springs</span></h2>
+                <p class="section-subtitle">Your trusted partner for all engineering spring solutions</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card card-3d reveal" data-delay="0">
+                    <div class="card-3d-inner">
+                        <div class="about-icon"><i class="fas fa-handshake"></i></div>
+                        <h3>Complete Satisfaction</h3>
+                        <p>We ensure every client receives products that exceed expectations with unmatched quality
+                            standards.</p>
+                    </div>
+                </div>
+                <div class="about-card card-3d reveal" data-delay="100">
+                    <div class="card-3d-inner">
+                        <div class="about-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Ethical Business</h3>
+                        <p>Transparent dealings and honest practices form the cornerstone of our business philosophy.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-card card-3d reveal" data-delay="200">
+                    <div class="card-3d-inner">
+                        <div class="about-icon"><i class="fas fa-tags"></i></div>
+                        <h3>Affordable Pricing</h3>
+                        <p>Premium quality springs at competitive prices that deliver real value for your projects.</p>
+                    </div>
+                </div>
+                <div class="about-card card-3d reveal" data-delay="300">
+                    <div class="card-3d-inner">
+                        <div class="about-icon"><i class="fas fa-award"></i></div>
+                        <h3>Qualitative Products</h3>
+                        <p>Each spring is precision-engineered using the finest materials for optimal performance.</p>
+                    </div>
+                </div>
+                <div class="about-card card-3d reveal" data-delay="400">
+                    <div class="card-3d-inner">
+                        <div class="about-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Transparent Dealings</h3>
+                        <p>Clear communication and straightforward processes at every step of your order.</p>
+                    </div>
+                </div>
+                <div class="about-card card-3d reveal" data-delay="500">
+                    <div class="card-3d-inner">
+                        <div class="about-icon"><i class="fas fa-credit-card"></i></div>
+                        <h3>Easy Payment</h3>
+                        <p>Flexible and convenient payment modes designed for hassle-free transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">What We Make</span>
+                <h2 class="section-title">Our <span class="gradient-text">Products</span></h2>
+                <p class="section-subtitle">Comprehensive spring solutions for every industry</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card card-3d reveal" data-delay="0">
+                    <div class="card-3d-inner">
+                        <div class="product-visual">
+                            <div class="spring-anim spring-compression"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Compression Springs</h3>
+                            <p>High-quality compression springs for industrial and commercial applications. Available in
+                                all sizes.</p>
+                            <a href="https://wa.me/919226890226?text=I%20want%20to%20enquire%20about%20Compression%20Springs"
+                                target="_blank" class="btn btn-small">
+                                <i class="fab fa-whatsapp"></i> Enquiry Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card card-3d reveal" data-delay="100">
+                    <div class="card-3d-inner">
+                        <div class="product-visual">
+                            <div class="spring-anim spring-extension"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Extension Springs</h3>
+                            <p>Precision extension springs that deliver reliable tension for your engineering needs.</p>
+                            <a href="https://wa.me/919226890226?text=I%20want%20to%20enquire%20about%20Extension%20Springs"
+                                target="_blank" class="btn btn-small">
+                                <i class="fab fa-whatsapp"></i> Enquiry Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card card-3d reveal" data-delay="200">
+                    <div class="card-3d-inner">
+                        <div class="product-visual">
+                            <div class="spring-anim spring-torsion"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Torsion Springs</h3>
+                            <p>Expertly crafted torsion springs designed for rotational force applications.</p>
+                            <a href="https://wa.me/919226890226?text=I%20want%20to%20enquire%20about%20Torsion%20Springs"
+                                target="_blank" class="btn btn-small">
+                                <i class="fab fa-whatsapp"></i> Enquiry Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card card-3d reveal" data-delay="300">
+                    <div class="card-3d-inner">
+                        <div class="product-visual">
+                            <div class="spring-anim spring-die"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Die Moulds Springs</h3>
+                            <p>Heavy-duty die mould springs built for stamping, pressing, and moulding operations.</p>
+                            <a href="https://wa.me/919226890226?text=I%20want%20to%20enquire%20about%20Die%20Moulds%20Springs"
+                                target="_blank" class="btn btn-small">
+                                <i class="fab fa-whatsapp"></i> Enquiry Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card card-3d reveal" data-delay="400">
+                    <div class="card-3d-inner">
+                        <div class="product-visual">
+                            <div class="spring-anim spring-wireform"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Wire Form Hooks</h3>
+                            <p>Custom wire form hooks and shapes manufactured to your exact specifications.</p>
+                            <a href="https://wa.me/919226890226?text=I%20want%20to%20enquire%20about%20Wire%20Form%20Hooks"
+                                target="_blank" class="btn btn-small">
+                                <i class="fab fa-whatsapp"></i> Enquiry Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card card-3d reveal" data-delay="500">
+                    <div class="card-3d-inner">
+                        <div class="product-visual">
+                            <div class="spring-anim spring-strip"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Strip Springs</h3>
+                            <p>Flat strip springs engineered for consistent force distribution and durability.</p>
+                            <a href="https://wa.me/919226890226?text=I%20want%20to%20enquire%20about%20Strip%20Springs"
+                                target="_blank" class="btn btn-small">
+                                <i class="fab fa-whatsapp"></i> Enquiry Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card card-3d card-featured reveal" data-delay="600">
+                    <div class="card-3d-inner">
+                        <div class="product-visual">
+                            <div class="spring-anim spring-zigzag"></div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Polyhouse Zig-Zag Springs & Clamps</h3>
+                            <p>Specialized springs and clamps designed for polyhouse and greenhouse structures.</p>
+                            <a href="https://wa.me/919226890226?text=I%20want%20to%20enquire%20about%20Polyhouse%20Zig-Zag%20Springs"
+                                target="_blank" class="btn btn-small">
+                                <i class="fab fa-whatsapp"></i> Enquiry Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="section shop" id="shop">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Order Now</span>
+                <h2 class="section-title">Shop <span class="gradient-text">Online</span></h2>
+                <p class="section-subtitle">Quick ordering via WhatsApp — get instant quotes</p>
+            </div>
+            <div class="shop-grid">
+                <div class="shop-card reveal" data-delay="0">
+                    <div class="shop-card-inner">
+                        <div class="shop-icon"><i class="fas fa-compress-alt"></i></div>
+                        <h3>Compression Springs</h3>
+                        <div class="shop-price">Get Quote</div>
+                        <a href="https://wa.me/919226890226?text=Hi%2C%20I%20would%20like%20to%20order%20Compression%20Springs.%20Please%20share%20pricing."
+                            target="_blank" class="btn btn-shop">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-card reveal" data-delay="100">
+                    <div class="shop-card-inner">
+                        <div class="shop-icon"><i class="fas fa-expand-alt"></i></div>
+                        <h3>Extension Springs</h3>
+                        <div class="shop-price">Get Quote</div>
+                        <a href="https://wa.me/919226890226?text=Hi%2C%20I%20would%20like%20to%20order%20Extension%20Springs.%20Please%20share%20pricing."
+                            target="_blank" class="btn btn-shop">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-card reveal" data-delay="200">
+                    <div class="shop-card-inner">
+                        <div class="shop-icon"><i class="fas fa-sync-alt"></i></div>
+                        <h3>Torsion Springs</h3>
+                        <div class="shop-price">Get Quote</div>
+                        <a href="https://wa.me/919226890226?text=Hi%2C%20I%20would%20like%20to%20order%20Torsion%20Springs.%20Please%20share%20pricing."
+                            target="_blank" class="btn btn-shop">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-card reveal" data-delay="300">
+                    <div class="shop-card-inner">
+                        <div class="shop-icon"><i class="fas fa-cube"></i></div>
+                        <h3>Die Moulds Springs</h3>
+                        <div class="shop-price">Get Quote</div>
+                        <a href="https://wa.me/919226890226?text=Hi%2C%20I%20would%20like%20to%20order%20Die%20Moulds%20Springs.%20Please%20share%20pricing."
+                            target="_blank" class="btn btn-shop">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-card reveal" data-delay="400">
+                    <div class="shop-card-inner">
+                        <div class="shop-icon"><i class="fas fa-link"></i></div>
+                        <h3>Wire Form Hooks</h3>
+                        <div class="shop-price">Get Quote</div>
+                        <a href="https://wa.me/919226890226?text=Hi%2C%20I%20would%20like%20to%20order%20Wire%20Form%20Hooks.%20Please%20share%20pricing."
+                            target="_blank" class="btn btn-shop">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-card reveal" data-delay="500">
+                    <div class="shop-card-inner">
+                        <div class="shop-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Strip Springs</h3>
+                        <div class="shop-price">Get Quote</div>
+                        <a href="https://wa.me/919226890226?text=Hi%2C%20I%20would%20like%20to%20order%20Strip%20Springs.%20Please%20share%20pricing."
+                            target="_blank" class="btn btn-shop">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-card shop-card-highlight reveal" data-delay="600">
+                    <div class="shop-card-inner">
+                        <div class="shop-icon"><i class="fas fa-grip-lines"></i></div>
+                        <h3>Polyhouse Zig-Zag Springs & Clamps</h3>
+                        <div class="shop-price">Get Quote</div>
+                        <a href="https://wa.me/919226890226?text=Hi%2C%20I%20would%20like%20to%20order%20Polyhouse%20Zig-Zag%20Springs%20%26%20Clamps.%20Please%20share%20pricing."
+                            target="_blank" class="btn btn-shop">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Product <span class="gradient-text">Gallery</span></h2>
+                <p class="section-subtitle">A showcase of our precision-engineered springs</p>
+            </div>
+            <div class="gallery-3d reveal">
+                <div class="gallery-track" id="gallery-track">
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <div class="gallery-visual gallery-spring-1"></div>
+                            <div class="gallery-label">Compression Springs</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <div class="gallery-visual gallery-spring-2"></div>
+                            <div class="gallery-label">Extension Springs</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <div class="gallery-visual gallery-spring-3"></div>
+                            <div class="gallery-label">Torsion Springs</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <div class="gallery-visual gallery-spring-4"></div>
+                            <div class="gallery-label">Die Moulds Springs</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <div class="gallery-visual gallery-spring-5"></div>
+                            <div class="gallery-label">Wire Form Hooks</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <div class="gallery-visual gallery-spring-6"></div>
+                            <div class="gallery-label">Strip Springs</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <div class="gallery-visual gallery-spring-7"></div>
+                            <div class="gallery-label">Zig-Zag Springs</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-controls">
+                    <button class="gallery-btn gallery-prev" id="gallery-prev" aria-label="Previous">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="gallery-btn gallery-next" id="gallery-next" aria-label="Next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="section payment" id="payment">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Payment Info</span>
+                <h2 class="section-title">Easy <span class="gradient-text">Payment</span></h2>
+                <p class="section-subtitle">Multiple convenient payment options</p>
+            </div>
+            <div class="payment-grid">
+                <div class="payment-card card-3d reveal" data-delay="0">
+                    <div class="card-3d-inner">
+                        <div class="payment-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Google Pay</h3>
+                        <p class="payment-value">9226890226</p>
+                    </div>
+                </div>
+                <div class="payment-card card-3d reveal" data-delay="150">
+                    <div class="card-3d-inner">
+                        <div class="payment-icon"><i class="fas fa-file-invoice"></i></div>
+                        <h3>GST Number</h3>
+                        <p class="payment-value">27BMIPJ9225K1ZM</p>
+                    </div>
+                </div>
+                <div class="payment-card card-3d reveal" data-delay="300">
+                    <div class="card-3d-inner">
+                        <div class="payment-icon"><i class="fas fa-user"></i></div>
+                        <h3>Beneficiary</h3>
+                        <p class="payment-value">Janvi Jejurikar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <a href="tel:+919096143811" class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9096143811</p>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/919226890226" target="_blank" rel="noopener" class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+91 9226890226</p>
+                        </div>
+                    </a>
+                    <a href="mailto:uniquesprings1@gmail.com" class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>uniquesprings1@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://maps.google.com/?q=Jyotiba+Mangal+Karyalay,+Gat+No.90+Talawade+Rd,+Jyotiba+Nagar,+Talawade,+Pimpri-Chinchwad+412114"
+                        target="_blank" class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Jyotiba Mangal Karyalay, Gat No.90 Talawade Rd, Jyotiba Nagar, Talawade, Pimpri-Chinchwad
+                                412114</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder=" ">
+                            <label for="phone">Phone Number</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <img src="images/logo.png" alt="Unique Springs Logo" class="brand-logo">
+                    </a>
+                    <p class="footer-desc">Premium spring manufacturing solutions since establishment.<br>Wire diameter
+                        range: 0.2mm to 45mm.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#products">Products</a>
+                    <a href="#shop">Shop Online</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <a href="#products">Compression Springs</a>
+                    <a href="#products">Extension Springs</a>
+                    <a href="#products">Torsion Springs</a>
+                    <a href="#products">Die Moulds Springs</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Unique Springs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919226890226" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
